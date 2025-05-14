@@ -30,11 +30,11 @@ const Navbar = () => {
     <header
       className={`sticky top-0 z-50 w-full transition-all duration-200 ${isScrolled ? "bg-background/95 backdrop-blur-sm shadow-sm" : "bg-transparent"}`}
     >
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-4 py-3 sm:py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
-            <a href="/" className="text-2xl font-bold">
-              Axis<span className="text-primary">Tech</span>
+            <a href="/" className="text-xl sm:text-2xl font-bold">
+              DM<span className="text-primary">Agency</span>
             </a>
           </div>
 
@@ -74,44 +74,44 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden pt-4 pb-2">
-            <nav className="flex flex-col space-y-4">
+          <div className="md:hidden pt-2 pb-2 px-1">
+            <nav className="flex flex-col space-y-3">
               <a
                 href="#services"
-                className="text-sm font-medium hover:text-primary transition-colors"
+                className="text-sm font-medium hover:text-primary transition-colors py-2 px-1"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Services
               </a>
               <a
                 href="#portfolio"
-                className="text-sm font-medium hover:text-primary transition-colors"
+                className="text-sm font-medium hover:text-primary transition-colors py-2 px-1"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Portfolio
               </a>
               <a
                 href="#testimonials"
-                className="text-sm font-medium hover:text-primary transition-colors"
+                className="text-sm font-medium hover:text-primary transition-colors py-2 px-1"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Testimonials
               </a>
               <a
                 href="#blog"
-                className="text-sm font-medium hover:text-primary transition-colors"
+                className="text-sm font-medium hover:text-primary transition-colors py-2 px-1"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Blog
               </a>
               <a
                 href="#contact"
-                className="text-sm font-medium hover:text-primary transition-colors"
+                className="text-sm font-medium hover:text-primary transition-colors py-2 px-1"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contact
               </a>
-              <Button className="w-full">Get Started</Button>
+              <Button className="w-full mt-2">Get Started</Button>
             </nav>
           </div>
         )}

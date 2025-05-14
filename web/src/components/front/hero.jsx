@@ -3,14 +3,14 @@ import { Button } from "../ui/button"
 
 const Hero = () => {
   return (
-    <section className="relative py-20 md:py-32 overflow-hidden">
+    <section className="relative py-12 sm:py-16 md:py-20 lg:py-32 overflow-hidden">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-background pointer-events-none" />
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <div className="flex-1 text-center lg:text-left">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-4 sm:mb-6">
               Grow Your Business With Data-Driven Marketing
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto lg:mx-0">
@@ -26,7 +26,7 @@ const Hero = () => {
               </Button>
             </div>
 
-            <div className="mt-12 flex flex-wrap justify-center lg:justify-start gap-8">
+            <div className="mt-8 sm:mt-10 md:mt-12 flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 md:gap-8">
               <div className="text-center">
                 <p className="text-3xl font-bold">500+</p>
                 <p className="text-sm text-muted-foreground">Happy Clients</p>
@@ -42,7 +42,7 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="flex-1 w-full max-w-md lg:max-w-none">
+          <div className="flex-1 w-full max-w-sm sm:max-w-md lg:max-w-none mx-auto lg:mx-0">
             <div className="relative">
               <div className="absolute -inset-1 bg-gradient-to-r from-primary to-primary/50 rounded-lg blur-lg opacity-75"></div>
               <div className="relative bg-background rounded-lg shadow-xl overflow-hidden">

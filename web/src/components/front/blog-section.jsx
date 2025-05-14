@@ -19,10 +19,10 @@ const BlogSection = ({ blogs }) => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {blogs.map((blog) => (
             <Card key={blog.id} className="overflow-hidden group">
-              <div className="relative overflow-hidden h-48">
+              <div className="relative overflow-hidden h-40 sm:h-44 md:h-48">
                 <img
                   src={blog.image_url || `/placeholder.svg?height=192&width=384&text=${blog.title.charAt(0)}`}
                   alt={blog.title}
@@ -31,10 +31,12 @@ const BlogSection = ({ blogs }) => {
               </div>
               <CardContent className="pt-6">
                 <div className="text-sm text-muted-foreground mb-2">{formatDate(blog.published_at)}</div>
-                <h3 className="font-bold text-xl mb-3 line-clamp-2 group-hover:text-primary transition-colors">
+                <h3 className="font-bold text-lg sm:text-xl mb-2 sm:mb-3 line-clamp-2 group-hover:text-primary transition-colors">
                   {blog.title}
                 </h3>
-                <p className="text-sm text-muted-foreground line-clamp-3">{blog.content.substring(0, 150)}...</p>
+                <p className="text-sm text-muted-foreground line-clamp-2 sm:line-clamp-3">
+                  {blog.content.substring(0, 150)}...
+                </p>
               </CardContent>
               <CardFooter>
                 <Button variant="ghost" className="p-0 h-auto group-hover:text-primary">

@@ -27,14 +27,14 @@ const Testimonials = ({ testimonials }) => {
         </div>
 
         <div className="relative max-w-4xl mx-auto">
-          <Card className="border-none shadow-lg bg-primary/5">
-            <CardContent className="pt-10 pb-10">
+          <Card className="border-none shadow-lg bg-primary/5 mx-4 sm:mx-auto">
+            <CardContent className="pt-8 pb-8 sm:pt-10 sm:pb-10 px-4 sm:px-6">
               <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-primary text-primary-foreground p-3 rounded-full">
                 <Quote className="h-6 w-6" />
               </div>
 
               <div className="text-center">
-                <blockquote className="text-xl md:text-2xl italic mb-8">
+                <blockquote className="text-lg sm:text-xl md:text-2xl italic mb-6 sm:mb-8">
                   "{testimonials[currentIndex].quote}"
                 </blockquote>
 
@@ -43,7 +43,7 @@ const Testimonials = ({ testimonials }) => {
                     <img
                       src={
                         testimonials[currentIndex].image_url ||
-                        `/placeholder.svg?height=64&width=64&text=${testimonials[currentIndex].name.charAt(0)}`
+                        `/placeholder.svg?height=64&width=64&text=${testimonials[currentIndex].name.charAt(0) || "/placeholder.svg"}`
                       }
                       alt={testimonials[currentIndex].name}
                       className="w-full h-full object-cover"
@@ -58,7 +58,7 @@ const Testimonials = ({ testimonials }) => {
             </CardContent>
           </Card>
 
-          <div className="flex justify-center mt-8 gap-2">
+          <div className="flex justify-center mt-6 sm:mt-8 gap-2">
             <Button variant="outline" size="icon" onClick={prevTestimonial} className="rounded-full">
               <ChevronLeft className="h-4 w-4" />
             </Button>

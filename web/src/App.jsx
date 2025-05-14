@@ -20,8 +20,12 @@ function App() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    // In a real app, you would fetch data from your API
-    // For demo purposes, we'll use mock data
+    // Add viewport meta tag for better mobile responsiveness
+    const meta = document.createElement("meta")
+    meta.name = "viewport"
+    meta.content = "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    document.getElementsByTagName("head")[0].appendChild(meta)
+    
     const fetchData = async () => {
       try {
         // Simulate API calls

@@ -13,10 +13,10 @@ const Portfolio = ({ portfolios }) => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {portfolios.map((portfolio) => (
             <Card key={portfolio.id} className="overflow-hidden group">
-              <div className="relative overflow-hidden h-60">
+              <div className="relative overflow-hidden h-48 sm:h-52 md:h-60">
                 <img
                   src={portfolio.image_url || `/placeholder.svg?height=240&width=400&text=${portfolio.title}`}
                   alt={portfolio.title}
@@ -33,7 +33,7 @@ const Portfolio = ({ portfolios }) => {
                 <h3 className="font-bold text-xl mb-2">{portfolio.title}</h3>
                 <p className="text-sm text-muted-foreground mb-4">{portfolio.description}</p>
 
-                <div className="grid grid-cols-2 gap-4 mb-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-4">
                   <div>
                     <h4 className="text-xs uppercase text-muted-foreground font-semibold mb-1">Before</h4>
                     <p className="text-sm">{portfolio.before_stats}</p>

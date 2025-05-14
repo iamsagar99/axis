@@ -46,10 +46,10 @@ const ContactForm = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 max-w-5xl mx-auto">
           <div>
             <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
-            <div className="space-y-6">
+            <div className="space-y-4 sm:space-y-6">
               <div className="flex items-start">
                 <div className="mr-4 bg-primary/10 p-3 rounded-full text-primary">
                   <Mail className="h-5 w-5" />
@@ -103,9 +103,9 @@ const ContactForm = () => {
             </div>
           </div>
 
-          <div className="bg-muted/30 p-8 rounded-lg">
+          <div className="bg-muted/30 p-6 sm:p-8 rounded-lg">
             <h3 className="text-2xl font-bold mb-6">Send Us a Message</h3>
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium mb-2">
                   Your Name

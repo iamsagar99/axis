@@ -13,10 +13,10 @@ const Services = ({ services }) => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           {services.map((service) => (
             <Card key={service.id} className="group hover:shadow-lg transition-all duration-300">
-              <CardHeader>
+              <CardHeader className="p-4 sm:p-6">
                 <div className="w-12 h-12 mb-4 flex items-center justify-center rounded-lg bg-primary/10 text-primary">
                   <img
                     src={service.icon_url || `/placeholder.svg?height=48&width=48&text=${service.title.charAt(0)}`}
@@ -25,7 +25,9 @@ const Services = ({ services }) => {
                   />
                 </div>
                 <CardTitle>{service.title}</CardTitle>
-                <CardDescription className="line-clamp-2">{service.description}</CardDescription>
+                <CardDescription className="line-clamp-2 mt-1 text-sm sm:text-base">
+                  {service.description}
+                </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">{service.description}</p>
