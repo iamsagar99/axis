@@ -1,18 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import RoutingComponent from './router/route.jsx';
-import './index.css';
-import App from './App.jsx';
-import { ToastProvider } from "./components/ui/use-toast"
+import React from "react"
+import ReactDOM from "react-dom/client"
+import App from "./App.jsx"
+import "./index.css"
+import { ToastProvider } from "./components/ui/use-toast.jsx"
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-
-root.render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ToastProvider>
       <App />
     </ToastProvider>
-   {/* <RoutingComponent/> */}
-  </React.StrictMode>
-);
-
+  </React.StrictMode>,
+)

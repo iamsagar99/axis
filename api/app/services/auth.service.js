@@ -1,6 +1,6 @@
 const jwt = require("jsonwebtoken");
 const CONFIG = require("../../config/config.json");
-const db = require("../../config/connection.js");
+const connectionPromise = require("../../config/connection.js");
 
 class AuthService {
     loginValidate(data) {
@@ -20,35 +20,37 @@ class AuthService {
         return Object.keys(error).length ? error : null;
     }
 
-    getUserByEmail(email) {
-        return new Promise((resolve, reject) => {
-            db.query("SELECT * FROM users WHERE email = ? LIMIT 1", [email], (err, rows) => {
-                if (err) return reject(err);
-                resolve(rows[0]);
-            });
-        });
+    async getUserByEmail(email) {
+        try {
+            const db = await connectionPromise;  // wait for connection
+            const [rows] = await db.query("SELECT * FROM users WHERE email = ? LIMIT 1", [email]);
+            return rows[0];
+        } catch (err) {
+            throw err;
+        }
     }
 
-    createUser(data) {
-        return new Promise((resolve, reject) => {
+    async createUser(data) {
+        try {
+            const db = await connectionPromise;
             const sql = `INSERT INTO users (username, email, password_hash, role) VALUES (?, ?, ?, ?)`;
-            db.query(sql, [
+            const [result] = await db.query(sql, [
                 data.name,
                 data.email,
                 data.password,
                 data.role
-            ], (err, result) => {
-                if (err) return reject(err);
-                resolve({
-                    id: result.insertId,
-                    ...data
-                });
-            });
-        });
+            ]);
+            return {
+                id: result.insertId,
+                ...data
+            };
+        } catch (err) {
+            throw err;
+        }
     }
 
     generateAccessToken(data) {
-        return jwt.sign(data, CONFIG.JWT_SECRET || "defaultsecret", { expiresIn: "1d" });
+        return jwt.sign(data, CONFIG.jwt.secret || "defaultsecret", { expiresIn: "1d" });
     }
 }
 
