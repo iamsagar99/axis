@@ -9,7 +9,7 @@ export const fetchServices = () => {
       slug: "ai-solutions",
       short_description: "Cutting-edge artificial intelligence solutions for business automation and insights.",
       description: "Our AI solutions help businesses automate processes, gain valuable insights, and make data-driven decisions.",
-      icon_url: "/src/assets/icons/ai.svg",
+      icon_url: "/assets/icons/ai.svg",
       content: `
         <h2>Transform Your Business with AI</h2>
         <p>Our artificial intelligence solutions are designed to help businesses of all sizes harness the power of AI to automate processes, gain valuable insights, and make data-driven decisions.</p>
@@ -79,7 +79,7 @@ export const fetchServices = () => {
       slug: "cloud-services",
       short_description: "Comprehensive AWS and Azure cloud solutions for scalable and secure infrastructure.",
       description: "We provide end-to-end cloud services on AWS and Azure platforms to help businesses build scalable, secure, and cost-effective infrastructure.",
-      icon_url: "/src/assets/icons/cloud.svg",
+      icon_url: "/assets/icons/cloud.svg",
       content: `
         <h2>Cloud Services for Modern Businesses</h2>
         <p>Our comprehensive cloud services on AWS and Azure platforms help businesses build scalable, secure, and cost-effective infrastructure that meets their unique needs.</p>
@@ -161,7 +161,7 @@ export const fetchServices = () => {
       slug: "data-engineering",
       short_description: "Robust data engineering solutions to transform raw data into valuable business insights.",
       description: "Our data engineering team builds robust data pipelines, warehouses, and analytics solutions to transform your raw data into valuable business insights.",
-      icon_url: "/src/assets/icons/data.svg",
+      icon_url: "/assets/icons/data.svg",
       content: `
         <h2>Data Engineering Excellence</h2>
         <p>Our data engineering team builds robust data pipelines, warehouses, and analytics solutions to transform your raw data into valuable business insights.</p>
@@ -239,7 +239,7 @@ export const fetchServices = () => {
       slug: "digital-marketing",
       short_description: "Strategic digital marketing services across Meta, WhatsApp, Viber, email, and more.",
       description: "Our digital marketing experts create and execute data-driven strategies across multiple platforms to drive growth and engagement for your business.",
-      icon_url: "/src/assets/icons/marketing.svg",
+      icon_url: "/assets/icons/marketing.svg",
       content: `
         <h2>Digital Marketing That Delivers Results</h2>
         <p>Our digital marketing experts create and execute data-driven strategies across multiple platforms to drive growth and engagement for your business.</p>
@@ -309,7 +309,7 @@ export const fetchServices = () => {
       slug: "web-development",
       short_description: "Custom web development solutions from simple websites to complex web applications.",
       description: "Our web development team creates custom, responsive, and user-friendly websites and web applications tailored to your business needs.",
-      icon_url: "/src/assets/icons/web.svg",
+      icon_url: "/assets/icons/web.svg",
       content: `
         <h2>Web Development Solutions</h2>
         <p>Our web development team creates custom, responsive, and user-friendly websites and web applications tailored to your business needs.</p>
@@ -390,7 +390,7 @@ export const fetchServices = () => {
       slug: "ui-ux-design",
       short_description: "User-centered design services that create intuitive and engaging digital experiences.",
       description: "Our UI/UX design team creates intuitive, engaging, and accessible digital experiences that delight users and achieve your business goals.",
-      icon_url: "/src/assets/icons/design.svg",
+      icon_url: "/assets/icons/design.svg",
       content: `
         <h2>UI/UX Design Excellence</h2>
         <p>Our UI/UX design team creates intuitive, engaging, and accessible digital experiences that delight users and achieve your business goals.</p>
@@ -558,7 +558,7 @@ export const fetchBlogs = () => {
 
         <p>The AI landscape is evolving rapidly, creating both challenges and opportunities for businesses. By staying informed about emerging trends and taking a thoughtful approach to implementation, organizations can harness the power of AI to drive innovation, efficiency, and competitive advantage in 2023 and beyond.</p>
       `,
-      image_url: "/src/assets/blog/ai-future.jpeg",
+      image_url: "/assets/blog/ai-future.jpeg",
       published_at: "2023-06-15",
       author: "Dr. Sarah Chen",
       category: "Artificial Intelligence",
@@ -713,7 +713,7 @@ export const fetchBlogs = () => {
 
         <p>Remember that successful cloud migration is as much about people and processes as it is about technology. Invest time in organizational change management and skills development to ensure long-term success in the cloud.</p>
       `,
-      image_url: "/src/assets/blog/cloud-migration.jpg",
+      image_url: "/assets/blog/cloud-migration.jpg",
       published_at: "2023-05-22",
       author: "Michael Rodriguez",
       category: "Cloud Computing",
@@ -871,7 +871,7 @@ export const fetchBlogs = () => {
 
         <p>Remember that the goal isn't data for data's sake, but rather better outcomes through informed decision making at all levels of the organization.</p>
       `,
-      image_url: "/src/assets/blog/data-culture.jpg",
+      image_url: "/assets/blog/data-culture.jpg",
       published_at: "2023-04-10",
       author: "Jennifer Park",
       category: "Data & Analytics",
@@ -1063,7 +1063,7 @@ export const fetchBlogs = () => {
 
         <p>The key to success lies in providing genuine value through your WhatsApp communications—whether that's exceptional customer service, exclusive content, or personalized offers. When done right, WhatsApp becomes not just another marketing channel, but a powerful tool for building lasting customer relationships.</p>
       `,
-      image_url: "/src/assets/blog/digital_marketing.jpeg",
+      image_url: "/assets/blog/digital_marketing.jpeg",
       published_at: "2023-03-18",
       author: "Alex Thompson",
       category: "Digital Marketing",
@@ -1192,7 +1192,7 @@ export const fetchBlogs = () => {
 
         <p>A visually responsive site that performs poorly on mobile devices fails to deliver a truly responsive experience.</p>
       ` ,
-      image_url: "/src/assets/blog/responsive-design.jpg",
+      image_url: "/assets/blog/responsive-design.jpg",
       published_at: "2023-02-25",
       author: "David Lee",
       category: "Web Development",
@@ -1229,7 +1229,7 @@ export const fetchTestimonials = () => {
     {
       id: 1,
       name: "Sarah L., CEO of TechSolutions Inc.",
-      avatar_url: "/src/assets/testimonials/sarah-l.jpg",
+      avatar_url: "/assets/testimonials/sarah-l.jpg",
       testimonial: "Working with this team was a game-changer for our business. Their AI solutions helped us streamline operations and increase efficiency by 30%. Highly recommended!",
       rating: 5,
       project_type: "AI Solutions"
@@ -1237,7 +1237,7 @@ export const fetchTestimonials = () => {
     {
       id: 2,
       name: "John B., CTO of Cloud Innovators",
-      avatar_url: "/src/assets/testimonials/jhon-b.jpg",
+      avatar_url: "/assets/testimonials/jhon-b.jpg",
       testimonial: "Their expertise in cloud migration and architecture is unparalleled. They successfully migrated our entire infrastructure to AWS with minimal downtime and optimized our costs significantly.",
       rating: 5,
       project_type: "Cloud Services"
@@ -1245,7 +1245,7 @@ export const fetchTestimonials = () => {
     {
       id: 3,
       name: "Emily K., Marketing Director at eShop Global",
-      avatar_url: "/src/assets/testimonials/emily-k.jpg",
+      avatar_url: "/assets/testimonials/emily-k.jpg",
       testimonial: "The digital marketing campaigns they crafted for us resulted in a 150% increase in online sales within six months. Their strategic approach and understanding of our target audience were exceptional.",
       rating: 5,
       project_type: "Digital Marketing"
@@ -1253,7 +1253,7 @@ export const fetchTestimonials = () => {
     {
       id: 4,
       name: "David R., Founder of StartupX",
-      avatar_url: "/src/assets/testimonials/david-r.jpg",
+      avatar_url: "/assets/testimonials/david-r.jpg",
       testimonial: "From UI/UX design to full-stack web development, they delivered a stunning and highly functional platform that has received rave reviews from our users. Their attention to detail is commendable.",
       rating: 4,
       project_type: "Web Development & UI/UX Design"
@@ -1261,7 +1261,7 @@ export const fetchTestimonials = () => {
     {
       id: 5,
       name: "Maria G., Head of Analytics at DataCorp",
-      avatar_url: "/src/assets/testimonials/maria-g.jpg",
+      avatar_url: "/assets/testimonials/maria-g.jpg",
       testimonial: "The data engineering team built robust data pipelines that have transformed our ability to generate insights. Our reporting is now faster and more accurate than ever before.",
       rating: 5,
       project_type: "Data Engineering"
@@ -1287,8 +1287,8 @@ export const fetchPortfolios = () => { // Renaming to fetchCaseStudies for clari
         "10% decrease in stockout incidents",
         "Enhanced ability to plan promotions and staffing"
       ],
-      image_url: "/src/assets/case-studies/retail-ai.jpg",
-      thumbnail_url: "/src/assets/case-studies/retail-ai-thumb.jpg",
+      image_url: "/assets/case-studies/retail-ai.jpg",
+      thumbnail_url: "/assets/case-studies/retail-ai-thumb.jpg",
       testimonial_quote: "The AI forecasting system has revolutionized our planning process. We're making smarter decisions, faster.",
       technologies_used: ["Python", "TensorFlow", "AWS SageMaker", "SQL"],
       published_at: "2023-07-01"
@@ -1308,8 +1308,8 @@ export const fetchPortfolios = () => { // Renaming to fetchCaseStudies for clari
         "Reduced infrastructure operational costs by 20% through optimization",
         "Improved deployment frequency by 4x with CI/CD pipelines"
       ],
-      image_url: "/src/assets/case-studies/fintech-cloud.jpg",
-      thumbnail_url: "/src/assets/case-studies/fintech-cloud-thumb.jpg",
+      image_url: "/assets/case-studies/fintech-cloud.jpg",
+      thumbnail_url: "/assets/case-studies/fintech-cloud-thumb.jpg",
       testimonial_quote: "Their cloud expertise was critical to our growth. We now have a robust platform that our customers trust.",
       technologies_used: ["AWS (EC2, S3, Lambda, RDS, CloudFormation)", "Docker", "Kubernetes (EKS)", "Terraform"],
       published_at: "2023-06-10"
@@ -1329,8 +1329,8 @@ export const fetchPortfolios = () => { // Renaming to fetchCaseStudies for clari
         "50% increase in mobile engagement",
         "Streamlined checkout process reducing cart abandonment by 25%"
       ],
-      image_url: "/src/assets/case-studies/fashion-ecommerce.jpg",
-      thumbnail_url: "/src/assets/case-studies/fashion-ecommerce-thumb.jpg",
+      image_url: "/assets/case-studies/fashion-ecommerce.jpg",
+      thumbnail_url: "/assets/case-studies/fashion-ecommerce-thumb.jpg",
       testimonial_quote: "Our new website is not just beautiful, it's a conversion machine! The team understood our brand and customers perfectly.",
       technologies_used: ["Next.js", "React", "Shopify API", "Contentful", "Vercel"],
       published_at: "2023-08-15"
@@ -1350,8 +1350,8 @@ export const fetchPortfolios = () => { // Renaming to fetchCaseStudies for clari
         "Reduced cost per lead by 30%",
         "Improved domain authority and search engine rankings for key terms"
       ],
-      image_url: "/src/assets/case-studies/saas-marketing.jpg",
-      thumbnail_url: "/src/assets/case-studies/saas-marketing-thumb.jpg",
+      image_url: "/assets/case-studies/saas-marketing.jpg",
+      thumbnail_url: "/assets/case-studies/saas-marketing-thumb.jpg",
       testimonial_quote: "Their marketing strategy put us on the map. We're now seeing consistent lead flow and a much stronger brand presence.",
       technologies_used: ["HubSpot", "Google Analytics", "SEMrush", "LinkedIn Ads"],
       published_at: "2023-05-01"
@@ -1592,7 +1592,7 @@ const mockSuccessStories = [
     title: "Revolutionizing Customer Experience with AI",
     client_name: "Tech Innovators Inc.",
     industry: "Technology",
-    image_url: "/src/assets/case-studies/retail-ai.jpg",
+    image_url: "/assets/case-studies/retail-ai.jpg",
     excerpt: "Discover how AI transformed the customer support operations for Tech Innovators.",
     challenge: "Tech Innovators faced an overwhelming volume of customer queries, slowing down response times.",
     result: "AI-powered chatbots and automation led to a 30% increase in customer satisfaction.",
@@ -1603,7 +1603,7 @@ const mockSuccessStories = [
     title: "Enhancing Productivity with Cloud Solutions",
     client_name: "Global Enterprises",
     industry: "Business Solutions",
-    image_url: "/src/assets/case-studies/fintech-cloud.jpg",
+    image_url: "/assets/case-studies/fintech-cloud.jpg",
     excerpt: "Global Enterprises optimized its workflow with scalable cloud-based solutions.",
     challenge: "Outdated infrastructure was hindering productivity and collaboration among teams.",
     result: "The cloud implementation led to a 40% improvement in team collaboration and project delivery.",
@@ -1614,7 +1614,7 @@ const mockSuccessStories = [
     title: "Boosting Sales with Data Analytics",
     client_name: "RetailX",
     industry: "Retail",
-    image_url: "/src/assets/case-studies/saas-marketing.jpg",
+    image_url: "/assets/case-studies/saas-marketing.jpg",
     excerpt: "How RetailX leveraged data analytics to boost their sales by targeting high-value customers.",
     challenge: "RetailX struggled with targeting the right customers and tracking sales performance effectively.",
     result: "Data analytics tools provided actionable insights, driving a 25% increase in sales within three months.",
