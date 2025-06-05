@@ -62,7 +62,7 @@ const Hero = ({ companyName }) => {
     {/* Image Container */}
     <div className="relative bg-background rounded-lg shadow-xl overflow-hidden z-10">
       <img
-        src="/src/assets/dashboard.webp"
+        src="/assets/dashboard.webp"
         alt="Technology Dashboard"
         className="w-full h-auto object-cover"
       />
